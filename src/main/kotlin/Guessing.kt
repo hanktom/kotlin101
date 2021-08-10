@@ -14,7 +14,7 @@ fun main() {
     val big = 10
     var num = 0
     var counter = 0
-    while(num != secret) {
+    while (num != secret) {
         print("Please enter a number($small-$big):")
         var line = readLine()
     //    line = null
