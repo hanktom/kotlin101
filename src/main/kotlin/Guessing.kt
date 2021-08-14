@@ -1,6 +1,6 @@
 package com.tom.guess
 
-import Person
+import com.hank.Person
 import java.util.*
 
 fun main() {

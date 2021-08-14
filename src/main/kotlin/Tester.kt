@@ -1,4 +1,4 @@
-
+package com.hank
 //Top level
 fun main() {
     println("Hello world")
@@ -31,11 +31,3 @@ fun main() {
 //    person = Person() go wrong!
 }
 
-class Person {
-//    String name;
-    var name:String? = null
-    //public void hello() { .. }
-    fun hello() {
-        println("Hello Kotlin from Person")
-    }
-}
