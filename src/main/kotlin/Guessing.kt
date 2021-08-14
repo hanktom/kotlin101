@@ -8,8 +8,8 @@ fun main() {
     val r = Random()
     val secret = r.nextInt(10)+1
     println(secret)
-    val person = Person()
-    person.name = "Jack"
+//    val person = Person(0f, 0f)
+//    person.name = "Jack"
     val small = 1
     val big = 10
     var num = 0
@@ -21,7 +21,7 @@ fun main() {
     //    println(line?.length)
         //Elvis operator
         num = line?.toIntOrNull()?: 0
-        println("Hi, ${person.name}, The number you entered is $num")
+//        println("Hi, ${person.name}, The number you entered is $num")
         if (num < secret) {
             println("Bigger")
         } else if (num > secret){

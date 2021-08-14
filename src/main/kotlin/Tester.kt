@@ -19,15 +19,15 @@ fun main() {
     //物件導向程式設計 all about object
     //腳本式程式設計
     //React
-    val person = Person()
-    val p2 = Person()
-    person.hello()
-    //Property
-    person.name = "Hank"
-    person.hello()
+//    val person = Person()
+//    val p2 = Person()
+//    person.hello()
+//    Property
+//    person.name = "Hank"
+//    person.hello()
     //Null check
-    val length = person.name?.length
-    println(length)
+//    val length = person.name?.length
+//    println(length)
 //    person = Person() go wrong!
 }
 

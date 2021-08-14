@@ -7,15 +7,14 @@ fun main() {
     val bmi = weight / (height * height)
     println(bmi)
 
-    val p = Person()
-    p.weight = 65f
-    p.height = 1.7f
+    val p = Person(65f, 1.7f)
+//    p.weight = 65f
+//    p.height = 1.7f
     println(p.bmi())
 }
 
-class Person {
-    var weight :Float = 0f
-    var height :Float = 0f
+class Person(var weight:Float, val height:Float){
+
     //    String name;
     var name:String? = null
     //public void hello() { .. }
