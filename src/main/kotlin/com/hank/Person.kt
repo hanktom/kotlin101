@@ -11,10 +11,16 @@ fun main() {
 //    p.weight = 65f
 //    p.height = 1.7f
     println(p.bmi())
+    p.weight = 64f
+    println(p.bmi())
 }
 
-class Person(var weight:Float, val height:Float){
-
+class Person (var weight:Float, val height:Float){ //Primary constructor
+    //Secondary constructor
+    constructor() : this(0f, 0f)
+    constructor(name: String) : this() {
+        this.name = name
+    }
     //    String name;
     var name:String? = null
     //public void hello() { .. }
