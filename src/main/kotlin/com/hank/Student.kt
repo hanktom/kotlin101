@@ -6,12 +6,14 @@ package com.hank
 //2) 學生平均
 //3) 平均的等級A,B,C,D,F
 fun main() {
-    val stu = Student("001","Jack", 70, 90)
-    stu.print()
-    val hank = Student("004", "Hank")
-    hank.print()
-    val jane = Student("005", "Jane", 90, 95)
-    jane.print()
+    val students = listOf<Student>(
+        Student("001","Jack", 70, 90),
+        Student("004", "Hank"),
+        Student("005", "Jane", 90, 95))
+    for (i in 0..2) {
+        students.get(i).print()
+    }
+
 }
 
 class Student(val id:String,
