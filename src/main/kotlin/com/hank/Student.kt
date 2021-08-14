@@ -13,8 +13,25 @@ fun main() {
     for (i in 0..2) {
         students.get(i).print()
     }
+    for (stu in students) {
+        stu.print()
+    }
+    students.forEach { student ->
+        student.print()
+        student.expire()
+    }
+    var name = "hanktom"
 
 }
+//Extension function
+fun String.haha() {
+
+}
+
+fun Student.expire() {
+
+}
+
 
 class Student(val id:String,
               val name:String,
