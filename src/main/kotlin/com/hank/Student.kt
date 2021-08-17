@@ -34,7 +34,7 @@ fun main() {
         student.print()
         student.expire()
     }
-    var name = "hanktom"
+
 
 }
 //Extension function
@@ -52,6 +52,42 @@ class Student(val id:String,
               var english:Int, var math:Int) {
     constructor(id:String, name:String) : this(id, name, 0, 0)
     fun print() {
-        println("$id\t$name\t$english\t$math")
+        println("$id\t$name\t$english\t$math\t${average()}\t${grade2()}")
+    }
+
+    fun grade() : String {
+     /*   val grade = if (average() >= 90) "A"
+        else if (average() >= 80 && average() < 90) "B"
+        else if (average() >= 70 && average() < 80) "C"
+        else if (average() >= 60 && average() < 70) "D"
+        else "F"*/
+        /*val grade = when(average()) {
+            in 90..100 -> "A"
+            in 80..89 -> "B"
+            in 70..79 -> "C"
+            in 60..69 -> "D"
+            else -> "F"
+        }*/
+        val grade = when(average()/10) {
+            in 9..10 -> "A"
+            8 -> "B"
+            7 -> "C"
+            6 -> "D"
+            else -> "F"
+        }
+        return grade
+    }
+
+    fun grade2() = when(average()/10) {
+        in 9..10 -> "A"
+        8 -> "B"
+        7 -> "C"
+        6 -> "D"
+        else -> "F"
+    }
+
+    fun average() : Int {
+        //TODO: 小數點一位數，沒小數補 0, for example 92.0
+        return (math+english)/2
     }
 }
