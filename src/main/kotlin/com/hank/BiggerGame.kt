@@ -7,8 +7,8 @@ fun main() {
     //15%13+1 > 點數3, 15/13=1 > 花色 diamond
 
     //1) Data class, why?
-    //2) Enumeration
-    //3) 繼承&覆寫
+    //2) Enumeration and it's value
+    //3) 繼承 & 覆寫 Ctrl(Cmd)+O
     //4) Object-oriented
     //5) scope functions
 }
