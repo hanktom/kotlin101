@@ -49,8 +49,8 @@ fun Student.expire() {
 
 class Student(val id:String,
               val name:String,
-              var english:Int, var math:Int) {
-    constructor(id:String, name:String) : this(id, name, 0, 0)
+              var english:Int = 0, var math:Int = 0) {
+    //constructor(id:String, name:String) : this(id, name, 0, 0)
     fun print() {
         println("$id\t$name\t$english\t$math\t${average()}\t${grade2()}")
     }

@@ -5,6 +5,9 @@ fun main() {
     val DIAMOND = 2
     val HEART = 3
     val SPADE = 4*/
+    val c0 = Card()
+    c0.point = 3
+    c0.face = Face.DIAMOND
     //電腦的
     val c1 = Card(3, Face.CLUB) // 梅花3
 //    c1.point = 5 //only getter method
@@ -22,7 +25,7 @@ enum class Face (val value: Int) {
     CLUB(1), DIAMOND(2), HEART(3), SPADE(4)
 }
 
-data class Card (val point: Int, val face: Face) : Comparable<Card> {
+data class Card (var point: Int = 0, var face: Face = Face.CLUB) : Comparable<Card> {
     override fun compareTo(other: Card): Int {
         val diff = point - other.point
         return when(diff) {
