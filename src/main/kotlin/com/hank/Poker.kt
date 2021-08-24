@@ -1,6 +1,29 @@
 package com.hank
 
 fun main() {
+    val set = mutableSetOf<Int>()
+    set.add(3)
+    set.add(5)
+    set.add(1)
+    println(set)
+    set.forEach {
+        println(it)
+    }
+    //Map
+    val map = mapOf<Int,String>(
+        0 to "星期日",
+        1 to "星期一",
+        2 to "星期二",
+        3 to "星期三",
+        4 to "星期四",
+        5 to "星期五",
+        6 to "星期六")
+    println(map.get(2))
+    val parkingLot = mutableMapOf<String, Car>()
+    parkingLot.put(
+        "ABC-1234",
+        Car("ABC-1234", System.currentTimeMillis()))
+//    map.put(7, "NON")
     val deck = mutableListOf<Int>()
     for (i in 0 until 52) {
         deck.add(i)
@@ -37,3 +60,5 @@ fun printDeck(deck : List<Int>) {
         if ((counter)%13 == 0) println()
     }
 }
+
+data class Car(val id: String, val enter: Long, val leave: Long = 0)
