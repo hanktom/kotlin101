@@ -90,4 +90,5 @@ class Student(val id:String,
         //TODO: 小數點一位數，沒小數補 0, for example 92.0
         return (math+english)/2
     }
+    //TDD
 }
